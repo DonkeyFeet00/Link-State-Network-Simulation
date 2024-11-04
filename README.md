@@ -14,4 +14,5 @@ tentative plan
       - Listener: listens to packets sent by other routers, computes the shortest path to other routers, and updates the routing table accordingly whenever needed.
       - Change_Cost: allows the user of your simulator to simulate a change in the cost between the router and one of its directly connected neighbors. This function accepts two integers; the first identifies the neighbor, and the second identifies the new cost.
            - R1.Change_Cost(2, 400); is to change the cost between R1 and its second neighbor (from the Neighbors list) to 400. Calling this function requires the call of the Builder function to update all other routers in the network with such change.
-     
+* make a "initializer" class
+* make a "main engine" class
