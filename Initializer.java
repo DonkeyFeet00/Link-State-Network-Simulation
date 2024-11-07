@@ -11,8 +11,15 @@ public class Initializer {
     Router label: (neighbor label, cost); (neighbor label, cost); ….
  */
 
-    File inputFile = new File("Input");
-    Scanner fileScanner = new Scanner(inputFile);
+    void readFile(String fileName){
+        try {
+            File inputFile = new File(fileName);
+            Scanner fileScanner = new Scanner(inputFile);
+        }
+        catch(Exception e) {
+
+        }
+    }
 
 
 }
