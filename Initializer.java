@@ -13,11 +13,11 @@ public class Initializer {
 
     void readFile(String fileName){
         try {
-            File inputFile = new File(fileName);
-            Scanner fileScanner = new Scanner(inputFile);
+            File inFile = new File(fileName);
+            Scanner fileScanner = new Scanner(inFile);
         }
         catch(Exception e) {
-
+            System.out.println("Error opening file.");
         }
     }
 
