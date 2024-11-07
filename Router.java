@@ -3,16 +3,17 @@ import java.util.ArrayList;
 public class Router {
     private String name;
     private ArrayList<String> neighbors = new ArrayList<String>();
-    private ArrayList<String> cost = new ArrayList<String>();
+    private ArrayList<Integer> cost = new ArrayList<Integer>();
     private ArrayList<String> destinations = new ArrayList<String>();
     private ArrayList<String> routingTable = new ArrayList<String>();
 
 
-    public Router(/*TODO*/) {
+    public Router(String name /*TODO*/) {
+        this.name = name;
         /*TODO*/
     }
 
-    public void displayTable(/*TODO*/) {
+    public void displayTable(ArrayList<String> routingTable) {
         /*TODO*/
     }
 
@@ -24,7 +25,7 @@ public class Router {
         /*TODO*/
     }
 
-    public void changeCost(/*TODO*/) {
-        /*TODO*/
+    public void changeCost(int neighborNum, int newCost) {
+        this.cost.set(neighborNum - 1, newCost);
     }
 }
