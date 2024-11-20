@@ -17,7 +17,7 @@ public class Initializer {
             Scanner fileScanner = new Scanner(inFile);
         }
         catch(Exception e) {
-            System.out.println("Error opening file.");
+            System.out.println("Error opening file: " + e);
         }
     }
 
