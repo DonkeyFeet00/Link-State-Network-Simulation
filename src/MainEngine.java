@@ -2,7 +2,7 @@ public class MainEngine {
     //array of routers
     public static void main(String[] args) {
         Initializer init = new Initializer();
-        init.readFile("Input");
+        init.readFile("src/Input.txt");
 
 
 //        step1: Run the initializer
