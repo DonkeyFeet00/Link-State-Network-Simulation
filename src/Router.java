@@ -30,8 +30,15 @@ public class Router {
         }
     }
 
-    public void builder(/*TODO*/) {
-        /*TODO*/
+    //sends out a packet to other routers
+    //packet looks like "routerName: (neighbor1, cost) (neighbor2, cost) and so on
+    public String builder() {
+        String packet = name + ":";
+        for (int i = 0; i < neighbors.size(); i++) {
+            packet += " (" + neighbors.get(i) + ", ";
+            packet += cost.get(i) + ")";
+        }
+        return packet;
     }
 
     public void listener(/*TODO*/) {
@@ -40,5 +47,7 @@ public class Router {
 
     public void changeCost(int neighborNum, int newCost) {
         this.cost.set(neighborNum - 1, newCost);
+        //needs to call builder to send out new link state packets
+        builder();
     }
 }
